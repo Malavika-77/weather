@@ -32,6 +32,7 @@ const App = () => {
   };
 
   return (
+    <div>
     <div className="min-h-screen flex items-center justify-center bg-gray-50" style={{ backgroundImage: `url(${require('./back.jpg')})` }}>
       <div className="max-w-md w-full">
         <h1 className="text-3xl font-bold text-center mb-8">Weather Tracker</h1>
@@ -49,7 +50,7 @@ const App = () => {
           >
             Get Weather
           </button>
-        </form>
+        </form></div></div>
         {error && <p className="text-red-500 text-center mt-4">{error}</p>}
         {weatherData && (
           <div className="mt-0 w-full "style={{ position:"absolute",left:"100px",top:"100px"}}>
@@ -65,7 +66,7 @@ const App = () => {
             <p className="text-lg text-white text-4xl">Feels Like: {weatherData.main.feels_like}°C</p>
           </div>
         )}
-      </div>
+      
     </div>
   );
 };
