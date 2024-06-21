@@ -33,20 +33,20 @@ const App = () => {
 
   return (
     <div>
-    <div className="min-h-screen flex items-center justify-center bg-gray-50" style={{ backgroundImage: `url(${require('./back.jpg')})` }}>
+    <div className="min-h-screen w-full flex items-center justify-center bg-gray-50" style={{ backgroundImage: `url(${require('./back.jpg')})` }}>
       <div className="max-w-md w-full">
         <h1 className="text-3xl font-bold text-center mb-8">Weather Tracker</h1>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Enter location"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:border-blue-500"
+            className="w-md px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:border-blue-500"
             value={location}
             onChange={handleLocationChange}
           />
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            className="w-md bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
           >
             Get Weather
           </button>
