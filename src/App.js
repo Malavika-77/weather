@@ -40,13 +40,13 @@ const App = () => {
           <input
             type="text"
             placeholder="Enter location"
-            className="w-md px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:border-blue-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:outline-none focus:border-blue-500"
             value={location}
             onChange={handleLocationChange}
           />
           <button
             type="submit"
-            className="w-md bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
           >
             Get Weather
           </button>
@@ -60,8 +60,7 @@ const App = () => {
             <p className="text-lg text-white text-4xl">Wind Speed: {weatherData.wind.speed} m/s</p>
             <p className="text-lg text-white text-4xl">Humidity: {weatherData.main.humidity}%</p>
             <p className="text-lg text-white text-4xl">Visibility: {weatherData.visibility} meters</p>
-            <p className="text-lg text-white text-4xl">Sunrise: {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString()}</p>
-            <p className="text-lg text-white text-4xl">Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString()}</p>
+           
             <p className="text-lg text-white text-4xl">Pressure: {weatherData.main.pressure} hPa</p>
             <p className="text-lg text-white text-4xl">Feels Like: {weatherData.main.feels_like}°C</p>
           </div>
