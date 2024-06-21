@@ -52,7 +52,7 @@ const App = () => {
         </form>
         {error && <p className="text-red-500 text-center mt-4">{error}</p>}
         {weatherData && (
-          <div className="mt-2 w-full "style={{ position:"absolute",left:"100px",top:"100px"}}>
+          <div className="mt-0 w-full "style={{ position:"absolute",left:"100px",top:"100px"}}>
             <h2 className="text-5xl font-semibold">{weatherData.name}</h2>
             <p className="text-lg text-white text-4xl">Temperature: {weatherData.main.temp}°C</p>
             <p className="text-lg text-white text-4xl">Description: {weatherData.weather[0].description}</p>
