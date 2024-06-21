@@ -33,7 +33,7 @@ const App = () => {
 
   return (
     <div>
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-50" style={{ backgroundImage: `url(${require('./back.jpg')})` }}>
+    <div className="min-h-screen  flex items-center justify-center bg-gray-50" style={{ backgroundImage: `url(${require('./back.jpg')})` }}>
       <div className="max-w-md w-full">
         <h1 className="text-3xl font-bold text-center mb-8">Weather Tracker</h1>
         <form onSubmit={handleSubmit}>
